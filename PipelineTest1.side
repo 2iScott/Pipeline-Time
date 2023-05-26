@@ -1,0 +1,57 @@
+{
+  "id": "3e99be06-fc0d-4042-98ed-f540272706a1",
+  "version": "2.0",
+  "name": "PipelineTest1",
+  "url": "https://2itesting.com",
+  "tests": [{
+    "id": "658ee27b-6af0-4e7d-96fb-40c66b5a3138",
+    "name": "TestOne",
+    "commands": [{
+      "id": "200e494b-eb58-4fab-9f76-1ffd96644c64",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "332c32f0-b51b-496f-b043-f5d8c0d3f1bf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1084x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be98196c-b321-40b8-a960-6c0af7041225",
+      "comment": "",
+      "command": "click",
+      "target": "css=.promo-header",
+      "targets": [
+        ["css=.promo-header", "css:finder"],
+        ["xpath=//div[@id='barHeader']/div/div[2]/div[2]/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52fa6331-5e36-4092-bbc1-384feef92001",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.promo-header",
+      "targets": [
+        ["css=.promo-header", "css:finder"],
+        ["xpath=//div[@id='barHeader']/div/div[2]/div[2]/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Strategy\\nDelivery\\nCertainty"
+    }]
+  }],
+  "suites": [{
+    "id": "46ad8860-6902-4ca2-885c-9c055d177d20",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["658ee27b-6af0-4e7d-96fb-40c66b5a3138"]
+  }],
+  "urls": ["https://2itesting.com/"],
+  "plugins": []
+}
